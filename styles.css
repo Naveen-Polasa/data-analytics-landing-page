@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+    --color-primary: #722ED1;
+    --bg-primary:#E7F4FF;
+    --bg-primary-2: #beabd23a;
+  --bg-black: #0f0f10;
+  --bg-grey: #1e1e21;
+  --bg-grey-2: #FCF8FF;
+  --color-white: #fff;
+  --global-padding: 0 18rem 0 18rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--color-white);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+
+  margin: 0 auto;
+}
+
+p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  margin: 1.1rem 0 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+  /* text-transform: capitalize; */
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+  opacity: .7;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+small,
+.text_small {
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 1.3rem 0 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+nav > ul {
+  list-style: none;
+  opacity: 0.9;
+  text-transform: capitalize;
+}
+.btn {
+  background: var(--color-white);
+  border: none;
+  border: 1px solid var(--color-primary);
+  border-radius: 30px;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+/* hero */
+.hero{
+    padding: var(--global-padding);
+    background: linear-gradient(rgb(255, 255, 255), rgb(231, 244, 255));
+    transform: skew(0deg, -6deg);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: skew(0deg, 6deg);
+
+}
+nav > ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.drop-down{
+    width: .8rem;
+}
+.hero-bottom{
+    display: flex;
+    margin-top: 7rem ;
+    margin-bottom: 14rem ;
+    padding-bottom: 5rem;
+    transform: skew(0deg, 6deg);
+}
+.hero-version{
+    padding: .4rem .8rem;
+    margin-bottom: .6rem;
+    display: inline-block;
+    background-color: var(--bg-primary-2);
+    color: var(--color-primary);
+    border-radius: 18px;
+}
+.span1 {
+text-decoration: underline;
+}
+.btn1-hero{
+    background: var(--color-primary);
+    color: var(--color-white);
+    margin-right: 1rem;
+}
+.btn2-hero{
+    background: var(--color-white);
+    border: none;
+}
+/* features */
+.features{
+    padding: var(--global-padding);
+}
+.features-top{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.features-top > h4{
+    display: inline-block;
+    padding: .5rem .9rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-color: var(--bg-primary-2);
+    color: var(--color-primary);
+    border-radius: 18px;
+}
+.features-top > p{
+    padding: .5rem 8.4rem;
+    opacity: .7;
+}
+.features-middle{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* stack */
+.stack{
+    padding: var(--global-padding);
+    margin: 6rem 0;
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+}
+.stack-right-img{
+        display: inline-block;
+    padding: .5rem .8rem;
+    margin-bottom: .1rem;
+    display: inline-block;
+    background-color: var(--bg-primary-2);
+    color: var(--color-primary);
+    border-radius: 20px;
+}
+
+/* data pipelines */
+.data-pipeline{
+    padding: 0 3rem 0 18rem;
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+}
+.data-right-img{
+    display: inline-block;
+    padding: .5rem .7rem;
+    margin-bottom: .1rem;
+    background-color: var(--bg-primary-2);
+    color: var(--color-primary);
+    border-radius: 20px;
+}
+
+/* cto */
+.cto{
+padding:  6rem 18rem 6rem 18rem;
+margin-bottom: 12rem;
+text-align: center;
+background: linear-gradient(rgb(252, 248, 255), rgb(231, 244, 255));
+transform: skew(0deg,-5deg);
+}
+.cto-top{
+    margin-bottom: 2.4rem;
+    transform: skew(0deg, 5deg);
+}
+
+.cto-top > div > p{
+    font-weight: 800;
+    margin: .6rem;
+}
+.cto-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-top: 2px solid #aab7c4;
+    transform: skew(0deg, 5deg);
+}
+
+/* signup */
+.signup{
+    padding: var(--global-padding);
+    display: flex;
+}
+.signup-left{
+    width: 26rem;
+    padding-right: 3rem;
+}
+.signup-left > small{
+    background-color: var(--color-white);
+    padding: .5rem 1.5rem;
+    position: relative;
+    top: 14px;
+    left: 150px;
+}
+.signup-left-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4rem;
+    column-gap: 2rem;
+    padding: 4rem 0;
+    border-top: 2px solid #aab7c4;
+}
+.signup-right{
+    width: 30rem;
+    background-color: #f4eff7;
+}
+
+form{
+    background-color: var(--color-white);
+    margin: 0 2rem .9rem;
+    padding: 0 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -15px;
+}
+.signup-btn{
+    padding: .8rem 1rem;
+    border-radius: .3rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    margin-bottom: 1rem
+}
+.form-btn{
+    padding: .8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+    border: 1px solid #aab7c4;
+    letter-spacing: .4px;
+}
+.form-bottom{
+    opacity: .7;
+    padding: .5rem .5rem;
+    border-top: 1px solid #aab7c4;
+}
+.form-span{
+    color: var(--color-primary);
+    font-weight: 800;
+}
+
+/* footer */
+.footer{
+    padding:  0 15rem 0 15rem;
+    margin: 6rem 0;
+    display: flex;
+}
+.footer > ul{
+    list-style: none;
+    opacity: .7;
+}
+.footer-img{
+    display: flex;
+    column-gap: 1rem;
+    margin-top: 1.6rem;
+}
+.footer-logo > p{
+    width: 13.5rem;
+    opacity: .7;
+}
+.footer > ul :nth-child(1){
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+.footer > ul :nth-child(n+2){
+    font-size: .9rem;
+    margin: .4rem 0;
+}
+.footer-input{
+    padding: .6rem 1rem;
+    border: none;
+    background-color: var(--color-white);
+    box-shadow: 2px .1rem .3rem .15rem #e9e9f3;
+}
+.footer-img1{
+    position: relative;
+    top: 10px;
+    left: -30px;
+}
